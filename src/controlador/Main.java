@@ -6,6 +6,7 @@ package controlador;
  */
 import java.io.IOException;
 import java.util.ResourceBundle;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -22,7 +23,6 @@ import javafx.stage.Stage;
 import utils.GenericFormatter;
 
 public class Main extends Application {
-
 	private ResourceBundle texts;
 
 	@FXML
@@ -118,5 +118,9 @@ public class Main extends Application {
 		if (em != null)
 			em.close();
 	}
+	public static void main(String[] args) {
+		launch(args);
+	}
+	
 
 }
